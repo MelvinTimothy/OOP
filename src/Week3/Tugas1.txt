@@ -1,0 +1,29 @@
+1. Multidimensional Array adalah array yang berisikan satu atau lebih array di dalamnya. Artinya, setiap elemen dalam array bisa berupa array lagi. Struktur ini sering dipakai untuk merepresentasikan data dalam bentuk tabel (baris dan kolom).
+Contohnya : 
+nt[][] angka = {
+    {2, 4, 6},
+    {8, 10, 12}
+};
+
+System.out.println(angka[1][1]);
+
+Ouputnya : 10
+
+2. 13 method-method string dalam Java
+- length() = Mengembalikan panjang string (jumlah karakter).
+- charAt(int index) = Mengambil karakter pada posisi tertentu (indeks mulai dari 0).
+- substring(int beginIndex) = Mengambil substring mulai dari indeks tertentu sampai akhir.
+- substring(int beginIndex, int endIndex) = Mengambil substring dari indeks awal hingga sebelum indeks akhir.
+- equals(String another) = Membandingkan isi string (case sensitive).
+- equalsIgnoreCase(String another) = Membandingkan isi string tanpa memperhatikan huruf besar/kecil.
+- compareTo(String another)= Membandingkan dua string secara leksikografis (berdasarkan Unicode).
+- toLowerCase() = Mengubah semua huruf menjadi huruf kecil.
+- toUpperCase() = Mengubah semua huruf menjadi huruf besar.
+- trim() = Menghapus spasi di awal dan akhir string.
+- replace(char oldChar, char newChar) = Mengganti karakter lama dengan karakter baru.
+- contains(CharSequence s) = Mengecek apakah string mengandung substring tertentu.
+- indexOf(String str) = Mengembalikan posisi indeks pertama substring yang dicari, -1 jika tidak ada.
+
+3. 2 Keuntungan Immutability dalam Java:
+- Thread-Safe (Keamanan dalam Multithreading) Karena objek immutable tidak bisa diubah setelah dibuat, maka banyak thread dapat berbagi objek yang sama tanpa risiko perubahan data. Hal ini mengurangi kemungkinan bug yang sulit dilacak.
+- Keamanan Data = Nilai dari objek immutable tidak akan berubah, sehingga bisa diandalkan sebagai kunci dalam struktur data seperti HashMap atau HashSet.
